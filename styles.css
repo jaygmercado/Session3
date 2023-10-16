@@ -1,0 +1,99 @@
+/* 
+    10. Universal selector
+        selects all elements in a document
+    11. font-size
+            specifies the font size of text;
+    12. Units of measurement
+        12.1 em: relative to the font size of the parent
+        12.2 rem: relative to the font size of the root element
+        12.3: px
+        12.4 %: relative to the parent's dimenstion
+    13. font-family:
+            specifies the font family for text
+*/
+
+* {
+  font-size: 18px;
+  font-family: "Times New Roman", "Times", serif;
+}
+
+/* 
+    5. Tag Selector
+        Selects HTML elements based on the tag
+*/
+h3 {
+  color: orange;
+}
+
+/* 
+    6. Id selector
+        Selects an HTML element based on its id
+        use # before the name
+    7. line-height
+        sets the distance between line
+*/
+#intro-text {
+  line-height: 2;
+  background-color: red;
+}
+
+/* 
+    8. Class Selector
+        selects HTML elements based on a class
+        use . before the class name
+    9. text-decoration
+        sets the decoration to a text
+*/
+.style-types {
+  text-decoration: underline;
+}
+
+/* 
+    14. Descendant selector
+        selects all elements that are descendants of a specific element
+*/
+aside q {
+  background-color: yellow;
+}
+
+/* 
+    15. Direct descendant selector (parent)
+        selects all child-elements of a specific element
+*/
+article > p {
+  font-weight: bold;
+}
+
+/* 
+    16. Grouping selector
+        selects multiple elements
+*/
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+/* #lloyd-hotdog {
+  color: green;
+} */
+
+section > .praying-rod.driving-ace {
+  color: red;
+}
+
+.praying-rod {
+  color: purple;
+}
+
+pre {
+  color: blue !important;
+}
+
+/* 
+    17. Precedence
+    17.1 A more specific selector takes precedence over a less specific selector.
+            ID > Class > Tag
+    17.2 Rules that come later override those that come earlier
+    17.3 !important overrides everything. NEVER use this!
+*/

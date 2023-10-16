@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session 3</title>
+    <!-- 
+        3. Embedded Style
+            Rules are written inside the <style> elements
+     -->
+    <style>
+      h2 {
+        color: green;
+      }
+    </style>
+
+    <!-- 
+        4. External Style Sheet
+            MOST RECOMMENDED WAY!!
+            Rules are written inside an external CSS file
+     -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- 
+            1. Inline Style
+                LEAST RECOMMENDED WAY!!
+                Rule is written inside the opening tag of an HTML element and is applied thereto
+            2. color: sets the color of a text
+            -->
+      <h1 style="color: red">Cascading Style Sheets</h1>
+    </header>
+
+    <article>
+      <header>
+        <h2>Introduction</h2>
+      </header>
+
+      <p id="intro-text">
+        Cascading Style Sheets is a style sheet language used for describing the
+        presentation of a document written in a markup language such as HTML.
+        CSS is a cornerstone technology of the World Wide Web, alongside HTML
+        and JavaScript.
+      </p>
+    </article>
+
+    <article>
+      <header>
+        <h2>Styling HTML Elements</h2>
+      </header>
+
+      <ul>
+        <li class="style-types">Inline Style</li>
+        <li class="style-types">Embedded Style</li>
+        <li class="style-types">External Styile Sheet</li>
+      </ul>
+
+      <section>
+        <header>
+          <h3>Inline Style</h3>
+        </header>
+        <p>
+          It uses the style attribute in the HTML start tag.
+          <br />
+          Example:
+          <code>&lt;h1 style:"color: red;"&gt;Hello, World!&lt;/h1&gt;.</code>
+          <br />
+          This is the least recommended method.
+        </p>
+        <aside>
+          <p>
+            yo
+            <q>What is easy to do is also easy not to do.</q>
+            yo
+          </p>
+        </aside>
+      </section>
+
+      <section>
+        <header>
+          <h3>Embedded Style</h3>
+        </header>
+        It uses the <code>&lt;style&gt;</code> element in the head section of
+        the document. Example:
+        <pre id="lloyd-hotdog" class="praying-rod driving-ace">
+              &lt;head&gt;
+                  &lt;style&gt;
+                      h1 {
+                          color: red;
+                      }
+                  &emsp;&lt;/style&gt;
+              &lt;/head&gt;  
+          </pre
+        >
+      </section>
+
+      <section>
+        <header>
+          <h3>External Style Sheet</h3>
+        </header>
+        It uses the &lt;link&gt; element, pointing to an external CSS file.
+        Example:
+        <pre class="praying-rod">
+  &lt;head&gt;
+      &lt;style&gt;
+          &lt;link rel="stylesheet" href="./styles.css" /&gt;
+      &emsp;&lt;/style&gt;
+  &lt;/head&gt;
+  </pre
+        >
+        This is the most recommended method.
+        <br />
+        <q>Do not try to do everything. Do one thing well.</q>
+      </section>
+    </article>
+  </body>
+</html>
